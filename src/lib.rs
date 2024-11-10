@@ -187,7 +187,7 @@ fn rotate_log_file() {
             log_files.sort();
 
             if log_files.len() >= max_count as usize {
-                let file_to_remove = log_files.remove(log_files.len() - 1);
+                let file_to_remove = log_files.remove(1);
                 std::fs::remove_file(file_to_remove).unwrap_or(());
             }
 
