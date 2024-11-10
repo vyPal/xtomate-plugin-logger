@@ -175,7 +175,7 @@ fn rotate_log_file() {
                 .filter_map(|entry| {
                     entry.ok().and_then(|e| {
                         let path = e.path();
-                        if path.is_file() && path.file_name()?.to_str()?.starts_with("log") {
+                        if path.is_file() && path.file_name()?.to_str()?.starts_with(&log_file_path) {
                             Some(path.display().to_string())
                         } else {
                             None
