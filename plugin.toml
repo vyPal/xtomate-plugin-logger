@@ -1,5 +1,5 @@
 name = "logger"
-version = "0.1.3"
-runner_version = "^0.1.0"
+version = "0.x"
+runner_version = "0.x"
 build = "cargo build --release"
 output_dir = "target/release"
